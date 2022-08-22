@@ -5,6 +5,7 @@ public class Department{
 
     private  String deptId;
     private String departmentName;
+    private String collegeName;
 
 
 }
