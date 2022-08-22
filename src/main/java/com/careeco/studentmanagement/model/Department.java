@@ -7,6 +7,7 @@ public class Department{
     private String departmentName;
     private String collegeName;
     private String hodName;
+    private String deptNumber;
 
 
 }
