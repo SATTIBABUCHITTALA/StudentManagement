@@ -12,7 +12,7 @@ public class Department{
     private  String departmentStudent;
     // I have added one line
     // I am adding one comment on remote
-
+    // Updated for chekcing
 
     public String getDeptId() {
         return deptId;
