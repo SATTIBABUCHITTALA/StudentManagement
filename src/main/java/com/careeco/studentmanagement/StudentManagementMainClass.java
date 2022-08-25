@@ -3,6 +3,7 @@ package com.careeco.studentmanagement;
 import com.careeco.studentmanagement.model.Student;
 import com.careeco.studentmanagement.studentserviceimpl.StudentServiceImpl;
 
+import java.util.Collections;
 import java.util.List;
 
 public class StudentManagementMainClass {
@@ -13,5 +14,7 @@ public class StudentManagementMainClass {
         List<Student> studentList = studentServiceImpl.insertStudentData();
 
         studentServiceImpl.sortOutStudentList(studentList);
+
+        Collections.sort(studentList);
     }
 }
