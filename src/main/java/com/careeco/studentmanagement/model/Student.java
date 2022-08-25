@@ -1,8 +1,19 @@
 package com.careeco.studentmanagement.model;
 
-public class Student {
+public class Student implements Comparable<Student>{
     private String studentId;
     private String studentName;
+
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    private int age;
 
 
     public String getStudentId() {
@@ -20,12 +31,18 @@ public class Student {
     public void setStudentName(String studentName) {
         this.studentName = studentName;
     }
-
     @Override
     public String toString() {
         return "Student{" +
                 "studentId='" + studentId + '\'' +
                 ", studentName='" + studentName + '\'' +
+                ", age='" + age + '\'' +
                 '}';
+    }
+
+
+    @Override
+    public int compareTo(Student o) {
+        return Integer.compare(this.getAge(),o.getAge());
     }
 }
