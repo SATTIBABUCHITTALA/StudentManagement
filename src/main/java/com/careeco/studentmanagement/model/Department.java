@@ -7,6 +7,12 @@ public class Department{
     private String departmentName;
     private String hodOfDept;
 
+    private String collegeName;
+    private String name;
+    private  String departmentStudent;
+    // I have added one line
+    // I am adding one comment on remote
+
 
     public String getDeptId() {
         return deptId;
